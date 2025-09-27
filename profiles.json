@@ -1,0 +1,615 @@
+{
+    "1": {
+        "name": "Pc",
+        "scene_collection": "pc",
+        "scenes": [
+            {
+                "name": "Start",
+                "color": [
+                    1,
+                    50,
+                    32
+                ],
+                "text_color": [
+                    245,
+                    245,
+                    245
+                ],
+                "actions": [
+                    {
+                        "command": "set_scene",
+                        "params": {
+                            "sceneName": "start"
+                        }
+                    },
+                    {
+                        "command": "start_streaming"
+                    },
+                    {
+                        "command": "hide_source",
+                        "params": {
+                            "sceneName": "start",
+                            "sourceName": "intro_song"
+                        },
+                        "delay": 0
+                    },
+                    {
+                        "command": "show_source",
+                        "params": {
+                            "sceneName": "start",
+                            "sourceName": "intro_song"
+                        }
+                    },
+                    {
+                        "command": "hide_source",
+                        "params": {
+                            "sceneName": "start",
+                            "sourceName": "timer"
+                        },
+                        "delay": 0
+                    },
+                    {
+                        "command": "show_source",
+                        "params": {
+                            "sceneName": "start",
+                            "sourceName": "timer"
+                        }
+                    },
+                    {
+                        "command": "hide_source",
+                        "params": {
+                            "sceneName": "start",
+                            "sourceName": "start_soon"
+                        },
+                        "delay": 290000
+                    },
+                    {
+                        "command": "show_source",
+                        "params": {
+                            "sceneName": "start",
+                            "sourceName": "start_soon"
+                        },
+                        "delay": 10000
+                    },
+                    {
+                        "command": "set_scene",
+                        "params": {
+                            "sceneName": "game"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Game",
+                "color": [
+                    0,
+                    0,
+                    0
+                ],
+                "text_color": [
+                    245,
+                    245,
+                    245
+                ],
+                "actions": [
+                    {
+                        "command": "set_scene",
+                        "params": {
+                            "sceneName": "game"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Stop",
+                "color": [
+                    139,
+                    0,
+                    0
+                ],
+                "text_color": [
+                    245,
+                    245,
+                    245
+                ],
+                "actions": [
+                    {
+                        "command": "set_scene",
+                        "params": {
+                            "sceneName": "stop"
+                        }
+                    },
+                    {
+                        "command": "stop_stream",
+                        "delay": 0
+                    }
+                ]
+            },
+            {
+                "name": "Rec",
+                "color": [
+                    139,
+                    0,
+                    0
+                ],
+                "text_color": [
+                    245,
+                    245,
+                    245
+                ],
+                "actions": [
+                    {
+                        "command": "toggle_record"
+                    }
+                ]
+            },
+            {
+                "name": "Quit",
+                "color": [
+                    25,
+                    25,
+                    25
+                ],
+                "text_color": [
+                    245,
+                    245,
+                    245
+                ],
+                "actions": [
+                    {
+                        "command": "quit",
+                        "delay" : 0
+                    }
+                    
+                ]
+            }
+        ]
+    },
+    "2": {
+        "name": "Console",
+        "scene_collection": "console",
+        "scenes": [
+            {
+                "name": "Start",
+                "color": [
+                    1,
+                    50,
+                    32
+                ],
+                "text_color": [
+                    245,
+                    245,
+                    245
+                ],
+                "actions": [
+                    {
+                        "command": "set_scene",
+                        "params": {
+                            "sceneName": "start"
+                        }
+                    },
+                    {
+                        "command": "start_streaming"
+                    },
+                    {
+                        "command": "hide_source",
+                        "params": {
+                            "sceneName": "start",
+                            "sourceName": "intro_song"
+                        },
+                        "delay": 0
+                    },
+                    {
+                        "command": "show_source",
+                        "params": {
+                            "sceneName": "start",
+                            "sourceName": "intro_song"
+                        }
+                    },
+                    {
+                        "command": "hide_source",
+                        "params": {
+                            "sceneName": "start",
+                            "sourceName": "timer"
+                        },
+                        "delay": 0
+                    },
+                    {
+                        "command": "show_source",
+                        "params": {
+                            "sceneName": "start",
+                            "sourceName": "timer"
+                        }
+                    },
+                    {
+                        "command": "hide_source",
+                        "params": {
+                            "sceneName": "start",
+                            "sourceName": "start_soon"
+                        },
+                        "delay": 290000
+                    },
+                    {
+                        "command": "show_source",
+                        "params": {
+                            "sceneName": "start",
+                            "sourceName": "start_soon"
+                        },
+                        "delay": 10000
+                    },
+                    {
+                        "command": "set_scene",
+                        "params": {
+                            "sceneName": "game"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Game",
+                "color": [
+                    0,
+                    0,
+                    0
+                ],
+                "text_color": [
+                    245,
+                    245,
+                    245
+                ],
+                "actions": [
+                    {
+                        "command": "set_scene",
+                        "params": {
+                            "sceneName": "game"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Stop",
+                "color": [
+                    139,
+                    0,
+                    0
+                ],
+                "text_color": [
+                    245,
+                    245,
+                    245
+                ],
+                "actions": [
+                    {
+                        "command": "set_scene",
+                        "params": {
+                            "sceneName": "stop"
+                        }
+                    },
+                    {
+                        "command": "stop_stream",
+                        "delay": 0
+                    }
+                ]
+            },
+            {
+                "name": "Rec",
+                "color": [
+                    139,
+                    0,
+                    0
+                ],
+                "text_color": [
+                    245,
+                    245,
+                    245
+                ],
+                "actions": [
+                    {
+                        "command": "toggle_record"
+                    }
+                ]
+            },
+            {
+                "name": "Quit",
+                "color": [
+                    25,
+                    25,
+                    25
+                ],
+                "text_color": [
+                    245,
+                    245,
+                    245
+                ],
+                "actions": [
+                    {
+                        "command": "quit",
+                        "delay" : 0
+                    }
+                    
+                ]
+            }
+        ]
+    },
+    "3": {
+        "name": "Tournament",
+        "scene_collection": "tournament",
+        "scenes": [
+            {
+                "name": "sf6",
+                "color": [
+                    1,
+                    50,
+                    32
+                ],
+                "text_color": [
+                    116,
+                    148,
+                    84
+                ],
+                "actions": [
+                    {
+                        "command": "set_scene",
+                        "params": {
+                            "sceneName": "sf6_start"
+                        }
+                    },
+                    {
+                        "command": "hide_source",
+                        "params": {
+                            "sceneName": "sf6",
+                            "sourceName": "sf_song"
+                        },
+                        "delay": 0
+                    },
+                    {
+                        "command": "show_source",
+                        "params": {
+                            "sceneName": "sf6",
+                            "sourceName": "sf_song"
+                        }
+                    },
+                    {
+                        "command": "hide_source",
+                        "params": {
+                            "sceneName": "sf6",
+                            "sourceName": "sf_timer"
+                        },
+                        "delay": 0
+                    },
+                    {
+                        "command": "show_source",
+                        "params": {
+                            "sceneName": "sf6",
+                            "sourceName": "sf_timer"
+                        }
+                    },
+                    {
+                        "command": "hide_source",
+                        "params": {
+                            "sceneName": "sf6",
+                            "sourceName": "sf_start_soon"
+                        }
+                    },
+                    {
+                        "command": "show_source",
+                        "params": {
+                            "sceneName": "sf6",
+                            "sourceName": "sf_start_soon"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+     "4": {
+        "name": "Recording",
+        "scene_collection": "recording",
+        "scenes": [
+            {
+                "name": "Rec",
+                "color": [
+                    139,
+                    0,
+                    0
+                ],
+                "text_color": [
+                    245,
+                    245,
+                    245
+                ],
+                "actions": [
+                    {
+                        "command": "toggle_record"
+                    }
+                ]
+            },
+            {
+                "name": "Quit",
+                "color": [
+                    25,
+                    25,
+                    25
+                ],
+                "text_color": [
+                    245,
+                    245,
+                    245
+                ],
+                "actions": [
+                    {
+                        "command": "quit",
+                        "delay" : 0
+                    }
+                    
+                ]
+            }
+        ]
+    },
+     "5": {
+        "name": "2xko",
+        "scene_collection": "2xko",
+        "scenes": [
+            {
+                "name": "Start",
+                "color": [
+                    1,
+                    50,
+                    32
+                ],
+                "text_color": [
+                    245,
+                    245,
+                    245
+                ],
+                "actions": [
+                    {
+                        "command": "set_scene",
+                        "params": {
+                            "sceneName": "start"
+                        }
+                    },
+                    {
+                        "command": "start_streaming"
+                    },
+                    {
+                        "command": "hide_source",
+                        "params": {
+                            "sceneName": "start",
+                            "sourceName": "intro_song"
+                        },
+                        "delay": 0
+                    },
+                    {
+                        "command": "show_source",
+                        "params": {
+                            "sceneName": "start",
+                            "sourceName": "intro_song"
+                        }
+                    },
+                    {
+                        "command": "hide_source",
+                        "params": {
+                            "sceneName": "start",
+                            "sourceName": "timer"
+                        },
+                        "delay": 0
+                    },
+                    {
+                        "command": "show_source",
+                        "params": {
+                            "sceneName": "start",
+                            "sourceName": "timer"
+                        }
+                    },
+                    {
+                        "command": "hide_source",
+                        "params": {
+                            "sceneName": "start",
+                            "sourceName": "start_soon"
+                        },
+                        "delay": 290000
+                    },
+                    {
+                        "command": "show_source",
+                        "params": {
+                            "sceneName": "start",
+                            "sourceName": "start_soon"
+                        },
+                        "delay": 10000
+                    },
+                    {
+                        "command": "set_scene",
+                        "params": {
+                            "sceneName": "game"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Game",
+                "color": [
+                    0,
+                    0,
+                    0
+                ],
+                "text_color": [
+                    245,
+                    245,
+                    245
+                ],
+                "actions": [
+                    {
+                        "command": "set_scene",
+                        "params": {
+                            "sceneName": "game"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Stop",
+                "color": [
+                    139,
+                    0,
+                    0
+                ],
+                "text_color": [
+                    245,
+                    245,
+                    245
+                ],
+                "actions": [
+                    {
+                        "command": "set_scene",
+                        "params": {
+                            "sceneName": "stop"
+                        }
+                    },
+                    {
+                        "command": "stop_stream",
+                        "delay": 0
+                    }
+                ]
+            },
+            {
+                "name": "Rec",
+                "color": [
+                    139,
+                    0,
+                    0
+                ],
+                "text_color": [
+                    245,
+                    245,
+                    245
+                ],
+                "actions": [
+                    {
+                        "command": "toggle_record"
+                    }
+                ]
+            },
+            {
+                "name": "Quit",
+                "color": [
+                    25,
+                    25,
+                    25
+                ],
+                "text_color": [
+                    245,
+                    245,
+                    245
+                ],
+                "actions": [
+                    {
+                        "command": "quit",
+                        "delay" : 0
+                    }
+                    
+                ]
+            }
+        ]
+    }
+}
